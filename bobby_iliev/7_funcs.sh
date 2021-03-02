@@ -4,7 +4,7 @@ function fn() {
     echo "I am a function"
 }
 
-# call
+# call the created function without the parens
 # fn
 
 function sayhello() {
@@ -12,4 +12,3 @@ function sayhello() {
 }
 
 sayhello "Jevin"
-

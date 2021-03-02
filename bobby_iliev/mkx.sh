@@ -11,13 +11,22 @@
 # create file if does not exist
 # make file executable
 
-touch ${1}
+# file should exits but not empty
+# if [[ -e ${1}]]; then
+if [[ -s ${1} ]]; then
+    echo "Sorry, file already exits and has content"
+else
+    touch ${1}
 
-# Add the bash path
-echo "#!/bin/bash" > ${1}
+    # Add the bash path
+    echo "#!/bin/bash" >${1}
+    echo >>${1}
+    echo >>${1}
 
-chmod +x ${1}
+    # make executable
+    chmod +x ${1}
 
-# Being fancy here
-vim ${1}
-
+    # Being fancy here - opem with vim
+    # vim ${1}
+    code ${1}
+fi
