@@ -1,0 +1,76 @@
+Bash Notes
+----------
+
+pwd - current working directory
+ls - list the content of the pwd
+ls -l - list the content of the pwd in long format
+ls -a - list the content of the pwd including hidden files
+ls -la - list the content of the pwd in long format and include hidden files
+ls somedir - list the content of the somedir
+ls -R - list the content of the pwd and its directories recursively
+cd - move directory to the home directory
+cd somedir - change directory into somedir
+cd .. - move out into the parent directory of the pwd
+clear - clear screen
+echo - displays to the screen what data is passed to it
+echo $BASH - the path to the bash
+echo $HOME - the path of the current user
+man command - gives information on command
+* space KEY - move down a page
+* b KEY - move up a page
+* / - to search
+* q - to quit
+arrow key up or ctrl-p - previous command
+arrow key down or ctrl-n - next command
+cat filename - write to screen file content
+cat > filename - write into file and overwrite the content if filename already exist
+cat >> filename - write into file, append to the content
+vim filename - open file in vim editor
+touch filename - creates an empty file, filename
+mkdir dirname ... - create the directory, dirname ...
+less filename - write to screen
+reset - resets the terminal
+file filename - info about file
+rm filename - deletes file ny name file
+rm -rf dirname - delete the content of dirname and the dirname itself
+firefox filename or filepath - opens file in firefox
+cp targetpath destinationpath - cp file from target path to destination path
+cp -R targetpath destinationpath - cp files from target path to destination path recursively
+mv file_a file_b - renames file_a to file_b
+mv file_a target_path - moves file_a to target_path
+mv file_a target_path_file_b - moves file_a to target_path and renames it to file_b
+mv a b c target_path - moves a, b and c into taget_path
+rm file_a - deletes file_a
+rm file_a ... - will delete file_a and ...
+rm target_path/file_a - will delete file_a in target_path
+rm -r target_path - recursively deletes the content of target_path and target_path
+rmdir target_paths - removes empty dirs at target_paths
+cp -i or mv -i (the -i switch) - will prompt the user if the file should be moved or deleted
+    -i flag can be used in conjunction with others
+ls c* - lists all files or directory names that starts with c in the pwd
+ls ?c - lists all files or directory names that starts with a character followed by c in the pwd
+touch a{1,2} - creates a1 and a2
+cat > hello.txt - opens hello.txt to write into
+cat hello.txt > hi.txt - writes the content of hello.txt into hi.txt
+cat hello.txt >> hi.txt - writes the content of hello.txt into hi.txt but appends if there is a content in hi.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
